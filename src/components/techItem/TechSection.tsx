@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import type { Technology } from "../../types";
 import SelectedStackSidebar from "./SelectedStackSidebar";
 import TechGrid from "./TechGrid";
@@ -17,15 +18,21 @@ const TechSection = () => {
   const handleAddToStack = (tech: Technology) => {
     if (!selectedStack.some((item) => item.id === tech.id)) {
       setSelectedStack([...selectedStack, tech]);
+      toast.success(`${tech.name} added to your stack!`);
     }
   };
 
   const handleRemoveFromStack = (id: number) => {
+    const itemToRemove = selectedStack.find((item) => item.id === id);
     setSelectedStack(selectedStack.filter((item) => item.id !== id));
+    if (itemToRemove) {
+      toast.warn(`${itemToRemove.name} removed from your stack.`);
+    }
   };
 
   const handleRemoveAll = () => {
     setSelectedStack([]);
+    toast.error('All technologies removed from your stack!');
   };
 
   return (

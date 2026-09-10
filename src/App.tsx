@@ -1,8 +1,10 @@
-import { Suspense } from "react";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import TechSection from "./components/techItem/TechSection";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -10,11 +12,10 @@ function App() {
       <div>
         <Navbar />
         <Hero />
-        <Suspense fallback={"LOADING...."}>
-          <TechSection />
-        </Suspense>
+        <TechSection />
       </div>
       <Footer />
+      <ToastContainer position="bottom-right" autoClose={2000} />
     </div>
   );
 }
