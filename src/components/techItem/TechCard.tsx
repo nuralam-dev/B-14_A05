@@ -1,4 +1,4 @@
-import type { Technology } from '../types';
+import type { Technology } from "../../types";
 
 interface TechCardProps {
   tech: Technology;
@@ -10,7 +10,6 @@ const TechCard = ({ tech, isSelected, onAddToStack }: TechCardProps) => {
   return (
     <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
       <div>
-        {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <img
             src={tech.image}
@@ -21,15 +20,11 @@ const TechCard = ({ tech, isSelected, onAddToStack }: TechCardProps) => {
             {tech.badge}
           </span>
         </div>
-
-        {/* Info */}
         <h3 className="text-lg font-bold text-gray-900 mb-1">{tech.name}</h3>
         <p className="text-xs text-gray-500 line-clamp-3 leading-relaxed mb-6">
           {tech.description}
         </p>
       </div>
-
-      {/* Footer Info & Action */}
       <div>
         <div className="flex items-center justify-between text-xs text-gray-500 mb-4 pt-2 border-t border-gray-50">
           <span className="bg-gray-100 px-2 py-0.5 rounded text-gray-600 font-medium">
@@ -46,11 +41,11 @@ const TechCard = ({ tech, isSelected, onAddToStack }: TechCardProps) => {
           disabled={isSelected}
           className={`w-full py-2.5 rounded-xl font-medium text-xs transition ${
             isSelected
-              ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-              : 'bg-slate-900 hover:bg-black text-white'
+              ? "bg-gray-100 text-gray-400 cursor-not-allowed"
+              : "bg-slate-900 hover:bg-black text-white"
           }`}
         >
-          {isSelected ? 'Added to Stack' : tech.buttonText}
+          {isSelected ? "Added to Stack" : tech.buttonText}
         </button>
       </div>
     </div>
