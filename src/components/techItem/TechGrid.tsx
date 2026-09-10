@@ -6,7 +6,6 @@ interface TechGridProps {
   selectedStack: Technology[];
   onAddToStack: (tech: Technology) => void;
 }
-
 const TechGrid = ({
   technologies,
   selectedStack,

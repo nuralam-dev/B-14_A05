@@ -1,3 +1,4 @@
+import bannerImg from "../assets/banner-stack.png";
 const Hero = () => {
   return (
     <section className="bg-gradient-to-b from-white to-slate-50/50 py-12 lg:py-20">
@@ -15,18 +16,10 @@ const Hero = () => {
               them side by side, and put together the stack that fits your next
               project.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-              <button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-pink-500 hover:opacity-95 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition">
-                Explore Technologies
-              </button>
-              <button className="w-full sm:w-auto bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 font-semibold px-6 py-3 rounded-xl transition">
-                Learn More
-              </button>
-            </div>
           </div>
           <div className="flex justify-center items-center">
             <img
-              src="/src/assets/banner-stack.png"
+              src={bannerImg}
               alt="3D Development Stack"
               className="w-full max-w-md sm:max-w-lg object-contain drop-shadow-xl"
             />
@@ -36,4 +29,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;

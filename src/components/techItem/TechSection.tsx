@@ -7,21 +7,18 @@ import TechGrid from "./TechGrid";
 const TechSection = () => {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
   const [selectedStack, setSelectedStack] = useState<Technology[]>([]);
-
   useEffect(() => {
     fetch("/data.json")
       .then((res) => res.json())
       .then((data: Technology[]) => setTechnologies(data))
       .catch((err) => console.error("Failed to load JSON data:", err));
   }, []);
-
   const handleAddToStack = (tech: Technology) => {
     if (!selectedStack.some((item) => item.id === tech.id)) {
       setSelectedStack([...selectedStack, tech]);
       toast.success(`${tech.name} added to your stack!`);
     }
   };
-
   const handleRemoveFromStack = (id: number) => {
     const itemToRemove = selectedStack.find((item) => item.id === id);
     setSelectedStack(selectedStack.filter((item) => item.id !== id));
@@ -29,12 +26,10 @@ const TechSection = () => {
       toast.warn(`${itemToRemove.name} removed from your stack.`);
     }
   };
-
   const handleRemoveAll = () => {
     setSelectedStack([]);
     toast.error('All technologies removed from your stack!');
   };
-
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div className="mb-8 text-center md:text-left">
@@ -45,14 +40,12 @@ const TechSection = () => {
           Pick one technology per category to build your ideal stack.
         </p>
       </div>
-
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
         <TechGrid
           technologies={technologies}
           selectedStack={selectedStack}
           onAddToStack={handleAddToStack}
         />
-
         <SelectedStackSidebar
           selectedStack={selectedStack}
           onRemoveFromStack={handleRemoveFromStack}

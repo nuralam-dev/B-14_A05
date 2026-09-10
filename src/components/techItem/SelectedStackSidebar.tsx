@@ -19,7 +19,6 @@ const SelectedStackSidebar = ({
           ? `${selectedStack.length} Technology Selected`
           : "No technologies selected yet."}
       </p>
-
       {selectedStack.length === 0 ? (
         <div className="border border-dashed border-gray-200 rounded-xl py-10 text-center">
           <p className="text-xs text-gray-400">Your stack is empty.</p>

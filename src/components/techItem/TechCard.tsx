@@ -5,7 +5,6 @@ interface TechCardProps {
   isSelected: boolean;
   onAddToStack: (tech: Technology) => void;
 }
-
 const TechCard = ({ tech, isSelected, onAddToStack }: TechCardProps) => {
   return (
     <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
@@ -35,7 +34,6 @@ const TechCard = ({ tech, isSelected, onAddToStack }: TechCardProps) => {
             <span className="text-amber-400 mr-1">★</span> {tech.rating}
           </span>
         </div>
-
         <button
           onClick={() => onAddToStack(tech)}
           disabled={isSelected}
