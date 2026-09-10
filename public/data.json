@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "image": "https://i.ibb.co/L53jL9z/react.png",
+    "badge": "Popular",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "image": "https://i.ibb.co/v4Kj2z2/vue.png",
+    "badge": "Versatile",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "category": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.8,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 3,
+    "name": "Svelte",
+    "image": "https://i.ibb.co/S1VwM1M/svelte.png",
+    "badge": "Fast",
+    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "image": "https://i.ibb.co/B2vLq7c/nextjs.png",
+    "badge": "Fullstack",
+    "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "image": "https://i.ibb.co/m0Kx4jR/nodejs.png",
+    "badge": "Standard",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "category": "Backend",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "image": "https://i.ibb.co/X3s98yD/postgresql.png",
+    "badge": "Top SQL",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "category": "Database",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 7,
+    "name": "Redis",
+    "image": "https://i.ibb.co/YyY18x1/redis.png",
+    "badge": "Cache",
+    "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
+    "category": "Database",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "image": "https://i.ibb.co/P4408X2/javascript.png",
+    "badge": "Ubiquitous",
+    "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
+    "category": "Language",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "image": "https://i.ibb.co/d8k9k8c/typescript.png",
+    "badge": "Essential",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 10,
+    "name": "Java",
+    "image": "https://i.ibb.co/C3g6P0p/java.png",
+    "badge": "Robust",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "category": "Language",
+    "level": "Intermediate",
+    "rating": 4.6,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 11,
+    "name": "Tailwind CSS",
+    "image": "https://i.ibb.co/ZfZGv9v/tailwind.png",
+    "badge": "Modern",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "category": "Styling",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "buttonText": "Add to Stack"
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "image": "https://i.ibb.co/xS2kM4r/docker.png",
+    "badge": "Containers",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
+    "category": "DevOps",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "buttonText": "Add to Stack"
+  }
+]
