@@ -39,13 +39,19 @@ const TechCard = ({ tech, isSelected, onAddToStack }: TechCardProps) => {
         <button
           onClick={() => onAddToStack(tech)}
           disabled={isSelected}
-          className={`w-full py-2.5 rounded-xl font-medium text-xs transition ${
+          className={`w-full py-2.5 rounded-xl font-medium text-xs transition flex items-center justify-center gap-1 ${
             isSelected
-              ? "bg-gray-100 text-gray-400 cursor-not-allowed"
+              ? "bg-purple-50 text-purple-600 border border-purple-100 cursor-not-allowed"
               : "bg-slate-900 hover:bg-black text-white"
           }`}
         >
-          {isSelected ? "Added to Stack" : tech.buttonText}
+          {isSelected ? (
+            <>
+              <span>✓</span> Added to Stack
+            </>
+          ) : (
+            tech.buttonText
+          )}
         </button>
       </div>
     </div>
