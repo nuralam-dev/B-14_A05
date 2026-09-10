@@ -1,20 +1,22 @@
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-
-
+import { Suspense } from "react";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import TechSection from "./components/TechSection";
 
 function App() {
-  
-
   return (
-    <>
-     <Navbar></Navbar>
-     <Hero></Hero>
-     {/* footer */}
-     <Footer></Footer>
-    </>
-  )
+    <div className="min-h-screen bg-slate-50/30 flex flex-col justify-between font-sans">
+      <div>
+        <Navbar />
+        <Hero />
+        <Suspense fallback={"LOADING...."}>
+          <TechSection />
+        </Suspense>
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
